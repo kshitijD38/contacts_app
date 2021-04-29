@@ -9,6 +9,12 @@
   box-shadow: 10px 10px 13px #0002, -10px -10px 13px #fff7;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 form {
   margin: 20px;
   height: 40px;

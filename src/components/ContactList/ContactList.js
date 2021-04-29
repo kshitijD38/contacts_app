@@ -7,8 +7,6 @@ const ContactList = ({ contacts, handleRemove }) => {
         {contacts?.map((contact, index) => (
           <ContactItem
             key={index}
-            // name={contact.name}
-            // phone={contact.phone}
             contact={contact}
             handleDelete={() => handleRemove(index)}
             index={index}
