@@ -1,0 +1,94 @@
+.app {
+  width: 400px;
+  min-height: 500px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  box-shadow: 10px 10px 13px #0002, -10px -10px 13px #fff7;
+}
+
+form {
+  margin: 20px;
+  height: 40px;
+  width: 100%;
+}
+
+form input,
+form .button {
+  width: 250px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  box-shadow: inset -5px -5px 5px #fff7, inset 5px 5px 5px #0002;
+}
+
+form .button {
+  width: 80px;
+  margin-left: 15px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: -5px -5px 5px #fff7, 5px 5px 5px #0002;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: #e5e5e5;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-shadow: -3px -3px 3px #fff7, 3px 3px 3px #0002;
+}
+ul li {
+  list-style: none;
+  margin: 15px 0;
+  padding: 10px;
+  text-transform: capitalize;
+  box-shadow: -5px -5px 5px #fff7, 5px 5px 5px #0002;
+  animation: opacity 0.2s linear;
+}
+
+@keyframes opacity {
+  form {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active {
+  animation: del 0.3s linear;
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes del {
+  to {
+    opacity: 0;
+    transform: rotate(15deg) skew(25deg) scale(0.5);
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.filters button {
+  width: 80px;
+  margin-left: 15px;
+  letter-spacing: 2px;
+  border: none;
+  background-color: lightblue;
+  cursor: pointer;
+  box-shadow: -5px -5px 5px #fff7, 5px 5px 5px #0002;
+  border-radius: 5px;
+}
