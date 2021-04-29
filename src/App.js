@@ -60,7 +60,12 @@ function App() {
   // console.log("contacts>>>>>", contacts);
 
   return (
-    <div className="app">
+    <div
+      className="app"
+      style={{
+        backgroundImage: `url("/image/cool-background.png")`,
+      }}
+    >
       <AddContact contacts={contacts} setContacts={setContacts} />
       <h1 className="title">contact app</h1>
       <Filter
