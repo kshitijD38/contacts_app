@@ -6,7 +6,12 @@ const Filter = ({ ascContacts, dscContacts, searchInput }) => {
       <button onClick={ascContacts}>Asc</button>
       <button onClick={dscContacts}>Dsc</button>
       <input
-        style={{ border: "none", borderRadius: 10 }}
+        style={{
+          border: "none",
+          borderRadius: 10,
+          outline: "none",
+          padding: 10,
+        }}
         type="text"
         placeholder=" search"
         onChange={searchInput}
